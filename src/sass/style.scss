@@ -1,0 +1,22 @@
+@import 'libs/_bootstrap-reboot.min';
+@import url('https://fonts.googleapis.com/css2?family=Lusitana:wght@400;700&display=swap');
+
+
+@import'base/variables';
+
+
+
+* {
+    font-family: 'Lusitana', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+
+@import 'blocks/_header';
+@import 'blocks/market';

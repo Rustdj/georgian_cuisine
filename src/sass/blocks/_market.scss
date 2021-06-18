@@ -1,0 +1,8 @@
+.market {
+    
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(4, 205px);
+        grid-template-rows: repeat(4, 326px);
+    }
+}
