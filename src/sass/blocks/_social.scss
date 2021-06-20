@@ -1,0 +1,116 @@
+.social {
+    &__block {
+        display: grid;
+        grid-template-columns: repeat(2, 720px);
+        grid-template-rows: 300px;
+        justify-content: center;
+        margin-top: 60px;
+    }
+    &__wrapper {
+        background-color: $main-color;
+    }
+    &__title {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 30px;
+        color: #fff;
+        p {
+            font-size: 12px;
+            line-height: 32px;
+            color: #fff;
+        }
+        a {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 39px;
+            color: #fff;
+        }
+
+    }
+    &__subtitle {
+        display: flex;
+        justify-content: space-around;
+        display: flex;
+        p {
+            font-size: 12px;
+            line-height: 32px;
+            color: #fff;
+        }
+        a {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 39px;
+            color: #fff;
+        }
+    }
+    &__info {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 40px;
+        p {
+            font-size: 15px;
+            line-height: 32px;
+            color: #fff;
+        }
+        .email {
+            p {
+                font-size: 18px;
+                line-height: 32px;
+                color: #fff;
+            }
+        }
+        a {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            color: #fff;
+        }
+    }
+    &__policy {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+        color: #fff;
+        p {
+            font-size: 12px;
+            line-height: 32px;
+            color: #fff;
+        }
+        a {
+            font-size: 12px;
+            line-height: 32px;
+            color: #fff;
+        }
+        .polis {
+            a {
+                font-size: 12px;
+                line-height: 32px;
+                color: #fff;
+            }
+        }
+    }
+    &__links {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 30px;
+        a {
+            margin-left: 20px;
+            font-size: 15px;
+            line-height: 32px;
+            color: #fff;
+            letter-spacing: 3.08517px;
+            font-variant: small-caps;
+        }
+    }
+    &__soc {
+        margin-left: 50px;
+        margin-top: 50px;
+        a {
+            margin-left: 20px;
+            color: #fff;
+            letter-spacing: 3.08517px;
+            font-variant: small-caps;
+        }
+    }
+    
+}

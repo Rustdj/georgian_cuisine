@@ -1,0 +1,68 @@
+.footer {
+    padding-top: 75px;
+    &__karusel {
+        ul {
+            display: flex;
+            justify-content: center;
+            li {
+                list-style-type: none;
+                margin-left: 20px;
+                img {
+                    margin-left: 20px;
+                    margin-top: -4px;
+                }
+            }
+        }
+
+        
+    }
+    &__media {
+        background: url('/img/meet_footer.jpg') center 50%;
+        min-height: 650px;
+        margin-top: 50px;
+        img {
+            display: block;
+            padding-top: 20%;
+            margin: 0 auto;
+            
+        }
+    }
+    &__block {
+        display: grid;
+        grid-template-columns: 551px 434px;
+        grid-template-rows: 253px;
+        margin-left: 40px;
+        margin-top: 60px;
+        background-color: #F2F2F2;
+    }
+    &__descr {
+        font-size: 31px;
+        line-height: 38px;
+        font-weight: 400;
+        padding-top: 31px;
+        padding-left: 40px;
+    }
+    &__button {
+        position: absolute;
+        width: 171px;
+        height: 52px;
+        margin-top: 35px;
+        margin-left: 40px;
+        background-color: $main-color;
+        border-radius: 4px;
+        border: none;
+        color: #fff;
+        &:hover {
+            box-shadow: 3px 3px 20px;
+            color: #4F4F4F;
+        }
+        &:active {
+            color: #fff;
+            background-color: $main-color;
+            border: none;
+            
+            
+        }
+    }
+    
+}
