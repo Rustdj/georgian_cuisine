@@ -1,0 +1,52 @@
+.comment {
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 277px);
+        grid-template-rows: repeat(2, auto);
+        column-gap: 17px;
+        
+    }
+    &__title {
+        margin-top: 40px;
+    }
+    &__grid {
+        background-color: #F2F2F2;
+        border-radius: 15px;
+        margin-top: 20px;
+    }
+    &__descr {
+        font-size: 8px;
+        line-height: 11px;
+        
+    }
+    &__name {
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 13px;
+        
+    }
+    &__social {
+        img {
+            border-radius: 50%;
+        }
+    }
+    &__subsocial {
+        display: block;
+        a {
+            margin-left: 20px;
+        }
+    }
+    &__message {
+        display: grid;
+        justify-content: end;
+        margin-right: 10px;
+    }
+    &__links {
+        font-weight: 500;
+        font-size: 7px;
+        line-height: 9px;
+        text-decoration-line: underline;
+        color: $main-color;
+        
+    }
+}

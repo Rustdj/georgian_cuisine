@@ -1,0 +1,159 @@
+.descr {
+    margin-left: 175px;
+    padding-top: 60px;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 646px 312px;
+        grid-template-rows: auto;
+        column-gap: 36px;
+    }
+    &__subgrid {
+        box-shadow: 2px 2px 20px;
+        border-radius: 15px;
+    }
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 19px;
+        color: #828282;
+        a {
+            color: #828282;
+            &:hover {
+                box-shadow: none;
+                color: $main-color;
+                text-decoration: $main-color;
+            }
+            &:active {
+                box-shadow: none;
+                background-image: linear-gradient(green);
+                outline: none;
+            }
+            &:focus {
+                outline: none;
+                color: $main-color;
+            }
+        }
+    }
+    &__title {
+        margin-top: 40px;
+        font-weight: 500;
+        font-size: 21px;
+        line-height: 19px;
+    }
+    &__descr {
+        font-size: 18px;
+        line-height: 27px;
+        color: #828282;
+        margin-top: 24px;
+    }
+    &__subtitle {
+        font-size: 14px;
+        line-height: 17px;
+        margin-left: 57px;
+        margin-top: 20px;
+    }
+    &__bonus {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+        p {
+            margin-top: 15px;
+        }
+    }
+    &__delivery {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+        img {
+            margin-top: 1px;
+        }
+        p {
+            margin-top: 5px;
+        }
+    }
+    &__rating {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+    &__rating {
+        width: 186px;
+        height: 3px;
+        background-color: #F2F2F2;
+        border-radius: 4px;
+        margin-left: 62px;
+        margin-top: 10px;
+        span {
+            display: block;
+            border: 2px solid $main-color;
+            border-radius: 2px;
+            height: 100%;
+        }
+    }
+    &__prosent {
+        margin-left: 20px;
+        margin-top: -10px;
+    }
+    &__null {
+        margin-left: -10px;
+        margin-top: -10px;
+    }
+    &__minorder {
+        margin-top: 20px;
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 13px;
+        margin-left: 64px;
+    }
+    &__freedel {
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 13px;
+        margin-left: 53px;
+        margin-top: 10px;
+    }
+    &__calories {
+        margin-top: 20px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: #828282;
+    }
+    &__fats {
+        margin-top: 20px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: #828282;
+    }
+    &__proteins {
+        margin-top: 20px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: #828282;
+    }
+    &__carbohydrates {
+        margin-top: 20px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: #828282;
+    }
+    &__weight {
+        margin-top: 20px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: #828282;
+    }
+}
