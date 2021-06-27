@@ -40,9 +40,9 @@
                     </div>
                   </div>
                 <div class="header__item"><a href="delivery.html">Доставка</a></div>
-                <div class="header__item"><a href="">Оплата</a></div>
+                <div class="header__item"><a href="pay.html">Оплата</a></div>
                 <div class="header__item"><a href="">Бронь стола</a></div>
-                <div class="header__phone"><img src="icons/contact/phone.png" alt=""><a href="tel:88312826000">+7 (831) 282-60-00</a></img></div>
+                <div class="header__phone"><img src="icons/contact/phone.png" alt="phone"><a href="tel:88312826000">+7 (831) 282-60-00</a></img></div>
                 <div class="header__logo2">
                     <img src="icons/contact/person.png" alt="person">
                     <a href="shoping.html"><img src="icons/contact/shopping-cart.png" alt="card"></a>
@@ -50,97 +50,82 @@
             </div>
             <div class="divider"></div>    
         </div>
-        <section class="about">
+        <section class="basket">
             <div class="container">
-                <div class="about__block">
-                    <div class="about__wrapper">
-                        <div class="about__imgcard">
-                            <div class="about__item">
-                                <img src="img/stake.jpg" alt="meet" class="photo">
-                            </div>
-                        </div>
-                        <div class="about__card">
-                            <div class="about__title">Говядина 250гр</div>
-                            <img src="icons/contact/5stars.png" alt="" class="star">
-                            <p class="info">Кол-во отзывов: 23</p>
-                            <div class="about__price">
-                                <p>Цена за уп.</p>
-                                <div class="price">1 050 ₽</div>
-                            </div>
-                            <div class="about__quantity">
-                                <p>Кол-во шт в упаковке</p>
-                                <div class="quantity">4 шт.</div>
-                            </div>
-                            <div class="about__subquantity">
-                                <p class="subquantity">Количество</p>
+                <div class="basket__wrapper">
+                    <div class="basket__grid">
+                        <div class="basket__text">Корзина</div>
+                        <div class="divider"></div>
+                        <div class="basket__images">
+                            <img src="icons/vk.com/Icon/Outline/Mask.svg" alt="" class="close">
+                            <img src="img/hachapuri.jpg" alt="" class="basket__photo">
+                            <p class="text">Хачапури</p>
+                            <div class="basket__counter">
                                 <button class="dec">-</button>
-                                <input id="countID" value="1"/>
+                                <input value="1"/>
                                 <button class="inc">+</button>
                             </div>
-                            <div class="about__order">
-                                <button class="about__btn">Купить</button>
-                                <button class="about__button"><img src="icons/logo/shopping-cart.png" alt="button"></button>
+                            <div class="basket__price">350 ₽</div>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="basket__images">
+                            <img src="icons/vk.com/Icon/Outline/Mask.svg" alt="" class="close">
+                            <img src="img/hachapuri.jpg" alt="" class="basket__photo">
+                            <p class="text">Хачапури</p>
+                            <div class="basket__counter">
+                                <button class="dec">-</button>
+                                <input value="1"/>
+                                <button class="inc">+</button>
                             </div>
+                            <div class="basket__price">350 ₽</div>
+                        </div>
+                    </div>
+                    
+                    <div class="basket__order">
+                        <div class="basket__subtext">Заказ №47593</div>
+                        <div class="basket__product">
+                            <p class="list">Товаров в корзине</p>
+                            <p class="price">700 ₽ </p>
+                        </div>
+                        <div class="basket__subproduct">
+                            <p class="list">Промокод</p>
+                            <p class="price">- 100  ₽</p>
+                        </div>
+                        <div class="basket__pay">Итого к оплате</div>
+                        <div class="basket__price">600 ₽</div>
+                        <button class="btns">Оформить заказ</button>
+                    </div>
+                    <div class="basket__subgrid">
+                        <div class="basket__subtitle">Закажите на 3000 RUB и получите</div>
+                        <div class="basket__bonus">
+                            <img src="icons/contact/money.png" alt="money">
+                                <p>30 RUB на бонусный счет</p>
+                            </img>
+                        </div>
+                        <div class="basket__delivery">
+                            <img src="icons/order/autodil.png" alt="autodil">
+                                <p>Бесплатная доставка</p>
+                            </img>
+                        </div>
+                        <div class="basket__minorder">1000 (минимальный заказ)</div>
+                        <div class="basket__rating">
+                            <div class="basket__null">0</div>
+                            <span style="width: 100%;"></span>
+                            <div class="basket__prosent">3000</div>
+                            <div class="basket__line"></div> 
+                        </div>
+                        <div class="basket__freedel">Осталось 1988 RUB до бесплатной доставки</div>
+                    </div>
+                    <div class="basket__input">
+                        <div class="basket__subinput">Промокод</div>
+                        <div class="basket__blockinput">
+                            <input placeholder="Введите промокод" type="text">
+                            <button class="button">Подтвердить</button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="descr">
-            <div class="container">
-                <div class="descr__block">
-                    <div class="descr__wrapper">
-                        <div class="descr__grid">
-                            <div class="descr__header">
-                                <a href="order.html"><p>О товаре</p></a>
-                                <a href="#"><p>Параметры</p></a>
-                                <a href="comments.html"><p>Отзывы</p></a>
-                            </div>
-                            <div class="descr__calories">Калорий: 420</div>
-                            <div class="descr__fats">Жиры: 54</div>
-                            <div class="descr__proteins">Белки: 27</div>
-                            <div class="descr__carbohydrates">Углеводы: 18</div>
-                            <div class="descr__weight">Масса: 500 грамм</div>
-                        </div>
-                        <div class="descr__subgrid">
-                            <div class="descr__subtitle">Закажите на 3000 RUB и получите</div>
-                            <div class="descr__bonus">
-                                <img src="icons/contact/money.png" alt="money">
-                                    <p>30 RUB на бонусный счет</p>
-                                </img>
-                            </div>
-                            <div class="descr__delivery">
-                                <img src="icons/order/autodil.png" alt="autodil">
-                                    <p>Бесплатная доставка</p>
-                                </img>
-                            </div>
-                            <div class="descr__minorder">1000 (минимальный заказ)</div>
-                            <div class="descr__rating">
-                                <div class="descr__null">0</div>
-                                <span style="width: 100%;"></span>
-                                <div class="descr__prosent">3000</div>
-                                <div class="descr__line"></div> 
-                            </div>
-                            <div class="descr__freedel">Осталось 1988 RUB до бесплатной доставки</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <div class="container">
-            <div class="footer__wrapper">
-                <div class="footer__block">
-                    <div class="footer__grid">
-                        <div class="footer__descr">Бесплатная доставка по Москве<br> и Области от 2999 RUB!</div>
-                        <button class="footer__button">Оформить</button>
-                    </div>
-                        <div class="footer__grid">
-                            <img src="img/delivery.jpg" alt="auto" class="image">
-                        </div>
-                    </div>
-                </div>
-            </div>
 
 <section class="social">
     <div class="container">

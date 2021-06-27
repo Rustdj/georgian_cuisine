@@ -6,6 +6,7 @@
         column-gap: 17px;
         
     }
+    
     &__title {
         margin-top: 40px;
     }
@@ -48,5 +49,28 @@
         text-decoration-line: underline;
         color: $main-color;
         
+    }
+    &__btn {
+        background-color: $main-color;
+        color: #fff;
+        width: 125px;
+        height: 40px;
+        border: none;
+        border-radius: 5px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+        margin-top: 20px;
+        &:hover {
+            box-shadow: 3px 3px 20px;
+            color: #4F4F4F;
+        }
+        &:active {
+            color: #fff;
+            background-color: $main-color;
+            border: none;
+            
+            
+        }
     }
 }
