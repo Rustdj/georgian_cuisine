@@ -1,0 +1,200 @@
+.cardorder {
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 609px 480px;
+        grid-template-rows: auto;
+        row-gap: 45px;
+        column-gap: 150px;
+    }
+    &__grid {
+        .divider {
+            border: 1px solid rgba(0, 0, 0, 0.12);
+            width: 609px;
+            height: 0px;
+            box-shadow: inset 1px 1px 2px;
+        }
+    }
+    &__district {
+        width: 451px;
+        height: 65px;
+        border: 1px solid;
+        padding: 20px;
+        border-radius: 5px;
+        border: none;
+        background-color: #e0e0e0;
+        
+    }
+    
+
+    &__name {
+        width: 451px;
+        height: 65px;
+        border: 1px solid;
+        padding: 20px;
+        border-radius: 5px;
+        border: none;
+        background-color: #ececec;
+    }
+    &__phone {
+        width: 451px;
+        height: 65px;
+        border: 1px solid;
+        padding: 20px;
+        border-radius: 5px;
+        border: none;
+        background-color: #ececec;
+    }
+    &__addres {
+        width: 451px;
+        height: 65px;
+        border: 1px solid;
+        padding: 20px;
+        border-radius: 5px;
+        border: none;
+        background-color: #ececec;
+    }
+    &__subname {
+        font-size: 15px;
+        line-height: 24px;
+        margin-top: 30px;
+    }
+    &__subphone {
+        font-size: 15px;
+        line-height: 24px;
+        margin-top: 30px;
+    }
+    &__subtext {
+        font-size: 15px;
+        line-height: 24px;
+        margin-top: 30px;
+    }
+    &__addresdil {
+        font-size: 15px;
+        line-height: 24px;
+        margin-top: 30px;
+    }
+
+    &__text {
+        margin-top: 40px;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 50px;
+    }
+    &__text2 {
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 20px;
+        margin-top: 25px;
+    }
+    &__images {
+        display: flex;
+        a {
+            text-align: center;
+            margin-top: 35px;
+            opacity: 0.3;
+        }
+        p {
+            padding-top: 10%;
+            margin-left: 38px;
+            font-size: 18px;
+            line-height: 21px;
+        }
+        img {
+            margin-top: 30px;
+        }
+    }
+    &__self {
+        p {
+            margin-top: 83px;
+            margin-left: 20px;
+        }
+        display: flex;
+        .button {
+            width: 113px;
+            height: 32px;
+        }
+    }
+    &__summa {
+        p {
+            margin-top: 41px;
+            margin-left: 72px;
+        }
+        h3 {
+            margin-top: 35px;
+            margin-left: 94px;
+        }
+        display: flex;
+
+    }
+    &__delivery {
+        p {
+            margin-top: 41px;
+            margin-left: 72px;
+        }
+        h3 {
+            margin-top: 35px;
+            margin-left: 94px;
+        }
+        display: flex;
+    }
+    &__deli {
+        padding-bottom: 40px;
+    }
+    &__photo {
+        width: 111px;
+        height: 82px;
+        border-radius: 5px;
+        margin-top: 20px;
+        margin-left: 15px;
+    }
+    &__price {
+        padding-top: 10%;
+        margin-left: 63px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    &__counter {
+        padding-top: 8%;
+        margin-left: 75px;
+        input {
+            text-align: center;
+            width: 10px;
+            height: 42px;
+            border: none;
+        }
+        .dec, .inc {
+            width: 40px;
+            height: 42px;
+            border: none;
+            margin-top: 0px;
+        }
+        
+    }
+    
+        button {
+            margin-top: 78px;
+            width: 183px;
+            height: 58px;
+            border-radius: 5px;
+            background-color: #00AC4E;
+            border: none;
+            color: #fff;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+            &:hover {
+                box-shadow: 2px 2px 20px;
+                color: #828282;
+                text-decoration: #fff;
+            }
+            &:active {
+                box-shadow: none;
+                background-image: linear-gradient(rgb(197, 190, 190), rgb(240, 237, 235));
+                outline: none;
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+    }
