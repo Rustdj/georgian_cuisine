@@ -17,16 +17,15 @@
         
     }
     &__media {
-        background: url('/img/meet_footer.jpg') center;
-        min-height: 100px;
-        margin-top: 50px;
+        background: url('../img/meet_footer.jpg') center;
+        width: 1440px;
+        height: 648px;
         img {
             display: block;
             padding-top: 20%;
             margin: 0 auto;
-            
         }
-    }
+    }    
     &__block {
         display: grid;
         grid-template-columns: 551px 434px;
