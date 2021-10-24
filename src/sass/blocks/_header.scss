@@ -1,12 +1,42 @@
 .header {
+    background: url(https://www.chefmarket.ru/blog/wp-content/uploads/2019/02/kebab-home-e1550306690903.jpg)center no-repeat;
+    background-size: 100%;
+    backdrop-filter: opacity .5;
     padding: 39px;
     &__top {
         display: flex;
         justify-content: space-between;
+        background: currentColor;
+        border-radius: 5px;
+        line-height: 3;
+    
         a {
-            color: #000;
-        }  
-    }  
+            color: aliceblue;
+        }
+        
+    } 
+    &__item {
+        font-weight: 900;
+        
+    } 
+
+    &__btns {
+        width: 20%;
+        height: 30px;
+        border-radius: 5%;
+        border: solid #00ac4e 1px;
+        font-size: 10px;
+        color: #00ac4e;
+        border-radius: 10px;
+        margin-left: 40%;
+        font-size: 15px;
+        &:hover {
+            background-color: $main-color;
+            color: #fff;
+            transition: 0.5s;
+        }
+    }
+
     &__wrapper {
         display: grid;
         grid-template-columns: 584px 410px;

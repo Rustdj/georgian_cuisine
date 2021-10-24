@@ -9,6 +9,19 @@
         justify-content: center;
         padding-top: 40px;
     }
+
+    &__wrapper {
+        border: solid;
+        background-color: #821a17;
+        color: aliceblue;
+        border-radius: 10px;
+        cursor: pointer;
+        &:hover {
+            box-shadow: 3px 3px 20px black;
+            transition: 0.5s;
+        }
+    }
+
     &__title {
         font-weight: 500;
         font-size: 27px;
@@ -18,8 +31,8 @@
     }
     
     &__photo {
-        width: 205px;
-        height: auto;
+        width: 199px;
+        height: 140px;
     }
     &__btn {
         position: absolute;
@@ -82,5 +95,10 @@
     }
     &__karusel {
         padding-top: 53px;
+    }
+
+    &__btn {
+        margin-left: 30px;
+        margin-top: 5px;
     }
 }
