@@ -12,7 +12,7 @@
 
     &__wrapper {
         border: solid;
-        background-color: #821a17;
+        background-color: #a18f8e;
         color: aliceblue;
         border-radius: 10px;
         cursor: pointer;
@@ -20,6 +20,12 @@
             box-shadow: 3px 3px 20px black;
             transition: 0.5s;
         }
+    }
+    &__wrapper {
+        &.active {
+            display: none;
+        } 
+        display: block;   
     }
 
     &__title {

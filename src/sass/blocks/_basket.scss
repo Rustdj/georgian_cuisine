@@ -22,6 +22,10 @@
     }
     &__images {
         display: flex;
+        border: solid #fff;
+        background-color: bisque;
+        opacity: .9;
+        border-radius: 10px;
         a {
             text-align: center;
             margin-top: 35px;
@@ -74,6 +78,9 @@
         box-shadow: 0px 0px 37.4204px rgba(0, 0, 0, 0.06);
         border-radius: 24px;
         padding-bottom: 20px;
+        border: solid #fff;
+        background-color: bisque;
+        opacity: .9;
         .btns {
             margin-top: 40px;
             width: 164px;
@@ -129,6 +136,9 @@
         box-shadow: 0px 0px 37.4204px rgba(0, 0, 0, 0.06);
         border-radius: 24px;
         padding-bottom: 30px;
+        border: solid #fff;
+        background-color: bisque;
+        opacity: .9;
     }
     &__subtitle {
         font-size: 19px;
@@ -184,14 +194,17 @@
         margin-left: 105px;
         margin-top: 15px;
     }
-    &__input {
-        padding-top: 30px;
-    }
+    // &__input {
+    //     padding-top: 30px;
+    //     border: solid #fff;
+    //     background-color: bisque;
+    // }
     &__subinput {
         margin-top: 20px;
         font-weight: 500;
         font-size: 20px;
         line-height: 25px;
+        color: #fff;
     }
     &__blockinput {
         margin-top: 20px;

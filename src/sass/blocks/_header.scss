@@ -12,11 +12,26 @@
     
         a {
             color: aliceblue;
-        }
-        
+        } 
     } 
+    &__image {
+        img {
+            border-radius: 20px;
+        }
+    }
+
     &__item {
         font-weight: 900;
+        color: #000;
+        text-decoration: none;
+        background-image: linear-gradient(currentColor, currentColor);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size .3s;
+        &:hover {
+            background-size: 100% 2px; 
+        }
         
     } 
 
@@ -96,24 +111,15 @@
         border: none;
         background-color: #fff;
         border-radius: 5px;
-        &:hover {
-            box-shadow: 3px 3px 20px;
-            color: #4F4F4F;
-        }
-        &:active {
+        &.active {
             color: #fff;
             background-color: $main-color;
             border: none;
-            
-            
         }
-            
-        &:focus {
-            background-color: $main-color;
-            width: 125px;
-            height: 35px;
-            border: #fff;
-            outline: none;
+
+        &:hover {
+            box-shadow: 3px 3px 20px;
+            color: #e6e0e0;  
         }
     }
     
@@ -132,9 +138,11 @@
             margin-top: 32px;
             margin-left: 40px;
             &:hover {
-                box-shadow: 2px 2px 20px;
-                color: #828282;
+                color: $main-color;
                 text-decoration: #fff;
+                background-color: #fff;
+                border: solid $main-color 1px;
+                transition: 0.6s;
             }
             &:active {
                 box-shadow: none;
@@ -147,6 +155,21 @@
         }
     }
 }
+
+.menu__link {
+    font-weight: 900;
+    color: #000;
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+    &:hover {
+        background-size: 100% 2px; 
+    }
+    
+} 
 
 .divider {
     border: 1px solid rgba(0, 0, 0, 0.12);

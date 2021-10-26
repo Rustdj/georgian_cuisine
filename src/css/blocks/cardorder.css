@@ -1,0 +1,156 @@
+.cardorder__wrapper {
+  display: grid;
+  grid-template-columns: 609px 480px;
+  grid-template-rows: auto;
+  row-gap: 45px;
+  column-gap: 150px; }
+.cardorder__grid .divider {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  width: 609px;
+  height: 0px;
+  box-shadow: inset 1px 1px 2px; }
+.cardorder__district {
+  width: 451px;
+  height: 65px;
+  border: 1px solid;
+  padding: 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #e0e0e0; }
+.cardorder__name {
+  width: 451px;
+  height: 65px;
+  border: 1px solid;
+  padding: 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #ececec; }
+.cardorder__phone {
+  width: 451px;
+  height: 65px;
+  border: 1px solid;
+  padding: 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #ececec; }
+.cardorder__addres {
+  width: 451px;
+  height: 65px;
+  border: 1px solid;
+  padding: 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #ececec; }
+.cardorder__subname {
+  font-size: 15px;
+  line-height: 24px;
+  margin-top: 30px; }
+.cardorder__subphone {
+  font-size: 15px;
+  line-height: 24px;
+  margin-top: 30px; }
+.cardorder__subtext {
+  font-size: 15px;
+  line-height: 24px;
+  margin-top: 30px; }
+.cardorder__addresdil {
+  font-size: 15px;
+  line-height: 24px;
+  margin-top: 30px; }
+.cardorder__text {
+  margin-top: 40px;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 50px; }
+.cardorder__text2 {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 20px;
+  margin-top: 25px; }
+.cardorder__images {
+  display: flex; }
+  .cardorder__images a {
+    text-align: center;
+    margin-top: 35px;
+    opacity: 0.3; }
+  .cardorder__images p {
+    padding-top: 10%;
+    margin-left: 38px;
+    font-size: 18px;
+    line-height: 21px; }
+  .cardorder__images img {
+    margin-top: 30px; }
+.cardorder__self {
+  display: flex; }
+  .cardorder__self p {
+    margin-top: 83px;
+    margin-left: 20px; }
+  .cardorder__self .button {
+    width: 113px;
+    height: 32px; }
+.cardorder__summa {
+  display: flex; }
+  .cardorder__summa p {
+    margin-top: 41px;
+    margin-left: 72px; }
+  .cardorder__summa h3 {
+    margin-top: 35px;
+    margin-left: 94px; }
+.cardorder__delivery {
+  display: flex; }
+  .cardorder__delivery p {
+    margin-top: 41px;
+    margin-left: 72px; }
+  .cardorder__delivery h3 {
+    margin-top: 35px;
+    margin-left: 94px; }
+.cardorder__deli {
+  padding-bottom: 40px; }
+.cardorder__photo {
+  width: 111px;
+  height: 82px;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-left: 15px; }
+.cardorder__price {
+  padding-top: 10%;
+  margin-left: 63px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px; }
+.cardorder__counter {
+  padding-top: 8%;
+  margin-left: 75px; }
+  .cardorder__counter input {
+    text-align: center;
+    width: 10px;
+    height: 42px;
+    border: none; }
+  .cardorder__counter .dec, .cardorder__counter .inc {
+    width: 40px;
+    height: 42px;
+    border: none;
+    margin-top: 0px; }
+.cardorder button {
+  margin-top: 78px;
+  width: 183px;
+  height: 58px;
+  border-radius: 5px;
+  background-color: #00AC4E;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px; }
+  .cardorder button:hover {
+    box-shadow: 2px 2px 20px;
+    color: #828282;
+    text-decoration: #fff; }
+  .cardorder button:active {
+    box-shadow: none;
+    background-image: linear-gradient(#c5bebe, #f0edeb);
+    outline: none; }
+  .cardorder button:focus {
+    outline: none; }
+
+/*# sourceMappingURL=cardorder.css.map */
