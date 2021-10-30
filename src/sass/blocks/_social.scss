@@ -1,13 +1,14 @@
 .social {
     &__block {
         display: grid;
-        grid-template-columns: repeat(2, 720px);
+        grid-template-columns: repeat(2, 712px);
         grid-template-rows: 300px;
         justify-content: center;
-        margin-top: 60px;
+        margin-top: 4px;
     }
     &__wrapper {
-        background-color: $main-color;
+        background: url(https://avatanplus.com/files/resources/original/5a9af8f713083161ed5c8526.jpg) center no-repeat;
+        background-size: 100%;
     }
     &__title {
         display: flex;
@@ -69,7 +70,7 @@
     &__policy {
         display: flex;
         justify-content: space-around;
-        margin-top: 50px;
+        margin-top: 35px;
         color: #fff;
         p {
             font-size: 12px;

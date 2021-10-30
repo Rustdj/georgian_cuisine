@@ -1,9 +1,36 @@
 .header {
+    
+    .navbar {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        margin-left: 40px;
+        right: 40px;
+    }
+
+    span {
+        margin-top: -35px;
+        padding-left: 7px;
+        color: red;
+        font-weight: bolder;
+  
+    }
     background: url(https://www.chefmarket.ru/blog/wp-content/uploads/2019/02/kebab-home-e1550306690903.jpg)center no-repeat;
     background-size: 100%;
     backdrop-filter: opacity .5;
     padding: 39px;
     &__top {
+        position: fixed;
+        width: 100%;
+        z-index: 50;
+        top: 0;
+        left: 0;
+        height: 89px;
+        align-items: center;
         display: flex;
         justify-content: space-between;
         background: currentColor;
@@ -14,6 +41,20 @@
             color: aliceblue;
         } 
     } 
+    &__phone {
+        a {
+            text-decoration: none;
+            background-image: linear-gradient(currentColor, currentColor);
+            background-position: 0% 100%;
+            background-repeat: no-repeat;
+            background-size: 0% 1px;
+            transition: background-size .3s;
+            &:hover {
+                background-size: 100% 2px; 
+            }
+        }
+    }
+
     &__image {
         img {
             border-radius: 20px;
@@ -22,13 +63,17 @@
 
     &__item {
         font-weight: 900;
-        color: #000;
+        color: rgb(230, 220, 220);
         text-decoration: none;
         background-image: linear-gradient(currentColor, currentColor);
         background-position: 0% 100%;
         background-repeat: no-repeat;
-        background-size: 0% 2px;
+        background-size: 0% 1px;
         transition: background-size .3s;
+        
+        a {
+           text-decoration: none; 
+        }
         &:hover {
             background-size: 100% 2px; 
         }
@@ -79,11 +124,12 @@
         margin-left: 40px;
     }
     &__arrow {
-        margin-top: 2px;
-        margin-right: 0px;
-        a {
-            margin-left: -80px;   
-        }
+        display: none;
+        // margin-top: 2px;
+        // margin-right: 0px;
+        // a {
+        //     margin-left: -80px;   
+        // }
     }
     &__list {
         a {
@@ -242,6 +288,7 @@
     }
     
 }
+
 
 
 

@@ -1,4 +1,6 @@
 .footer {
+    background: url(https://kartinkin.net/uploads/posts/2021-07/thumbs/1626136847_32-kartinkin-com-p-pomyataya-bumaga-tekstura-krasivo-38.jpg) center no-repeat;
+    background-size: 100%;
     padding-top: 75px;
     &__karusel {
         ul {
@@ -17,9 +19,12 @@
         
     }
     &__media {
-        background: url('../img/meet_footer.jpg') center;
-        width: 1440px;
-        height: 648px;
+        //background: url('../img/meet_footer.jpg') center;
+        margin-left: 16%;
+        margin-top: 90px;
+        iframe {
+            border-radius: 20px;
+        }
         img {
             display: block;
             padding-top: 20%;

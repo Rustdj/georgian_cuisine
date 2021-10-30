@@ -46,3 +46,22 @@ function onTabClick (item) {
 }
 
 document.querySelector('.header__btn').click();
+
+
+// cart
+
+const addProduct = document.querySelectorAll('.market__wrapper');
+const cart = document.querySelector('[data-link]');
+let price = document.querySelector('span');
+
+    
+        const printQuantity = () => {
+            addProduct.addEventListener('click', () => {
+                item.forEach((item) => {
+                })
+                // let lenght = cartProductList.querySelector('.').children.lenght;
+                // cartQuantity.textContent = lenght;
+                // lenght > 0 ? cart.classList.add('active') : cart.classList.remove('active')
+            })
+            
+        };

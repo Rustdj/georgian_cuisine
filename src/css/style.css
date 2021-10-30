@@ -254,6 +254,11 @@ template {
   background-size: 100%;
   backdrop-filter: opacity .5;
   padding: 39px; }
+  .header span {
+    margin-top: -35px;
+    padding-left: 7px;
+    color: red;
+    font-weight: bolder; }
   .header__top {
     display: flex;
     justify-content: space-between;

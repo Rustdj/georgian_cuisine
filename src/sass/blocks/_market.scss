@@ -1,5 +1,9 @@
 .market {
+    background: url(https://kartinkin.net/uploads/posts/2021-07/thumbs/1626136847_32-kartinkin-com-p-pomyataya-bumaga-tekstura-krasivo-38.jpg)center no-repeat;
+    background-size: 100%;
     
+
+
     &__cards {
         display: grid;
         grid-template-columns: repeat(4, 205px);
