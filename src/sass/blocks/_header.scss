@@ -110,7 +110,11 @@
     &__title {
         font-size: 31px;
         line-height: 38px;
-        color: #333333;
+        color: #fff;
+        width: 400px;
+        background-color: black;
+        border-radius: 20px;
+        padding-left: 15px;
         font-weight: 400;
         margin-top: 40px;
         margin-left: 40px;
@@ -118,7 +122,11 @@
     &__descr {
         font-size: 19px;
         line-height: 24px;
+        background-color: black;
+        width: 450px;
         color: #828282;
+        border-radius: 20px;
+        padding-left: 15px;
         font-weight: 400;
         margin-top: 10px;
         margin-left: 40px;

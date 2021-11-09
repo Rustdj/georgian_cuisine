@@ -20,7 +20,7 @@ window.addEventListener('DOMContentLoaded', () => {
 // Tabs
 
 const tabsBtn = document.querySelectorAll('.header__btn');
-const tabsItem = document.querySelectorAll('.market__wrapper');
+const tabsItem = document.querySelectorAll('.products-grid__item');
 
 
 tabsBtn.forEach(onTabClick); 
