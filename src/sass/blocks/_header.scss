@@ -1,48 +1,32 @@
-.header {
-    
-    .navbar {
-        position: relative;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-        margin-left: 40px;
-        right: 40px;
-    }
 
-    span {
-        margin-top: -35px;
-        padding-left: 7px;
-        color: red;
-        font-weight: bolder;
-  
+
+.header {
+    position: relative;
+    z-index: 100;
+    background-color: #fff;
+    box-shadow: 0px 4px 4px rgba(135, 135, 135, 0.25);
+    &__cart {
+        margin-left: 40px;
     }
-    background: url(https://www.chefmarket.ru/blog/wp-content/uploads/2019/02/kebab-home-e1550306690903.jpg)center no-repeat;
-    background-size: 100%;
-    backdrop-filter: opacity .5;
-    padding: 39px;
-    &__top {
-        position: fixed;
-        width: 100%;
-        z-index: 50;
-        top: 0;
-        left: 0;
-        height: 89px;
-        align-items: center;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    &__list {
         display: flex;
-        justify-content: space-between;
-        background: currentColor;
-        border-radius: 5px;
-        line-height: 3;
-    
+        align-items: center;
+    }
+    &__item:not(:last-child) {
+        margin-right: 60px;
         a {
-            color: aliceblue;
-        } 
-    } 
-    &__phone {
-        a {
+            font-size: 20px;
+            line-height: 19px;
+            text-align: right;
+            color: #000;
+
             text-decoration: none;
             background-image: linear-gradient(currentColor, currentColor);
             background-position: 0% 100%;
@@ -55,244 +39,33 @@
         }
     }
 
-    &__image {
-        img {
-            border-radius: 20px;
-        }
-    }
-
     &__item {
-        font-weight: 900;
-        color: rgb(230, 220, 220);
-        text-decoration: none;
-        background-image: linear-gradient(currentColor, currentColor);
-        background-position: 0% 100%;
-        background-repeat: no-repeat;
-        background-size: 0% 1px;
-        transition: background-size .3s;
-        
         a {
-           text-decoration: none; 
-        }
-        &:hover {
-            background-size: 100% 2px; 
-        }
-        
-    } 
+            font-size: 20px;
+            line-height: 19px;
+            text-align: right;
+            color: #000;
 
-    &__btns {
-        width: 20%;
-        height: 30px;
-        border-radius: 5%;
-        border: solid #00ac4e 1px;
-        font-size: 10px;
-        color: #00ac4e;
-        border-radius: 10px;
-        margin-left: 40%;
-        font-size: 15px;
-        &:hover {
-            background-color: $main-color;
-            color: #fff;
-            transition: 0.5s;
-        }
-    }
-
-    &__wrapper {
-        display: grid;
-        grid-template-columns: 584px 410px;
-        justify-content: center;
-        margin-top: 60px;
-    } 
-    &__blocks {
-        background: url(/img/main.jpg)center 50%;
-        border-radius: 20px;
-    }
-    &__title {
-        font-size: 31px;
-        line-height: 38px;
-        color: #fff;
-        width: 400px;
-        background-color: black;
-        border-radius: 20px;
-        padding-left: 15px;
-        font-weight: 400;
-        margin-top: 40px;
-        margin-left: 40px;
-    }
-    &__descr {
-        font-size: 19px;
-        line-height: 24px;
-        background-color: black;
-        width: 450px;
-        color: #828282;
-        border-radius: 20px;
-        padding-left: 15px;
-        font-weight: 400;
-        margin-top: 10px;
-        margin-left: 40px;
-    }
-    &__arrow {
-        display: none;
-        // margin-top: 2px;
-        // margin-right: 0px;
-        // a {
-        //     margin-left: -80px;   
-        // }
-    }
-    &__list {
-        a {
-            color: #4F4F4F;
+            text-decoration: none;
+            background-image: linear-gradient(currentColor, currentColor);
+            background-position: 0% 100%;
+            background-repeat: no-repeat;
+            background-size: 0% 1px;
+            transition: background-size .3s;
             &:hover {
-                box-shadow: 3px 3px 20px;
-                color: #4F4F4F;
-            }
-            &:active {
-                color: #fff;
-                background-color: $main-color;
-                border: none;
-            }
-        }
-        display: flex;
-        justify-content: space-around;
-        margin-left: 120px;
-        margin-top: 25px;
-    }
-    
-    &__btn {
-        margin-left: -50px; 
-        width: 125px;
-        height: 35px;
-        border: none;
-        background-color: #fff;
-        border-radius: 5px;
-        &.active {
-            color: #fff;
-            background-color: $main-color;
-            border: none;
-        }
-
-        &:hover {
-            box-shadow: 3px 3px 20px;
-            color: #e6e0e0;  
-        }
-    }
-    
-    &__button {
-        position: absolute;
-        button {
-            width: 217px;
-            height: 52px;
-            background-color: $main-color;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            font-weight: 500;
-            font-size: 25.3018px;
-            line-height: 30px;
-            margin-top: 32px;
-            margin-left: 40px;
-            &:hover {
-                color: $main-color;
-                text-decoration: #fff;
-                background-color: #fff;
-                border: solid $main-color 1px;
-                transition: 0.6s;
-            }
-            &:active {
-                box-shadow: none;
-                background-image: linear-gradient(rgb(65, 56, 56), rgb(58, 56, 56));
-                outline: none;
-            }
-            &:focus {
-                outline: none;
+                background-size: 100% 2px; 
             }
         }
     }
-}
 
-.menu__link {
-    font-weight: 900;
-    color: #000;
-    text-decoration: none;
-    background-image: linear-gradient(currentColor, currentColor);
-    background-position: 0% 100%;
-    background-repeat: no-repeat;
-    background-size: 0% 2px;
-    transition: background-size .3s;
-    &:hover {
-        background-size: 100% 2px; 
-    }
-    
-} 
 
-.divider {
-    border: 1px solid rgba(0, 0, 0, 0.12);
-    box-shadow: 0px 0px 15px;
-    margin-top: 39px;
-    width: 1140px;  
-}
-.dropbtn {
-    background-color: #161f16;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    line-height: 2px;
-    box-shadow: 3px 3px 20px;
-    background-color: green;
-    transition: all 0.6s;
-}
-
-.dropdown:hover {
-    position: relative;
-    display: inline-block;
-    .dropdown-content {
-        display: block;
-    }
-    .dropbtn {
-        background-color: $main-color;
-        transition: all 0.6s;
-    }
-
-}
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 230px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    border-radius: 12px;
-    padding-left: 35px;
-    transition: all 0.6s;
-    text-align:center;
-    width: 100%;
-    ul {
-        display:inline-block;
-        margin-top: 30px;
-        margin-left: -40px;
-        transition: all 0.6s;
-    }
-    li {
-        float: left;
-        display: flex;
-        transition: all 0.6s;
-    }
-    img {
-        min-width: 16px;
-        height: 20px;
-        margin-top: 11px;
-    }
-    a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-        transition: all 0.6s;
-        :hover {
-            background-color: #ddd;
-        }
+    &__Link {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: right;
+        color: $main-color-dark;
     }
     
 }

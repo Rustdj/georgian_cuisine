@@ -1,0 +1,128 @@
+.cart {
+    position: relative;
+    padding: 40px 20px;
+    transition: background-color 0.3s;
+    border: 1px solid red;
+    cursor: pointer;
+    border-radius: 5px;
+    &:hover {
+        background-color: red;
+        color: #fff;
+        transition: 0.4s;
+    }
+    &.active {
+        cursor: pointer;
+        background-color:rgba(93, 113, 221, 0.1);
+        &:focus {
+            cursor: pointer;
+            background-color:rgba(93, 113, 221, 0.1);
+        }
+    }
+    &__text {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 900;
+        font-size: 20px;
+        line-height: 19px;
+    }
+    &__quantity {
+        position: absolute;
+        right: 2px;
+        top: 35%;
+        transform: translateY(-50%);
+        color: #fff;
+        margin-top: -10px;
+        background-color: #de707b;
+        border-radius: 100%;
+        padding: 3px;
+        height: 30px;
+        min-width: 30px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 25px;
+        line-height: 1;
+    }
+    &-content {
+        cursor: default;
+        position: absolute;
+        right: 0;
+        top: 100%;
+        width: 490px;
+        background-color: #fff;
+        box-shadow: opx 4px 4px rgba(135, 135, 135, 0.25);
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s, visibility 0.3s;
+        &__list {
+            max-height: 330px;
+        }
+        &__bottom {
+            padding: 22px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &__fullprice {
+            display: flex;
+            flex-direction: column;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: var(--color-dark);
+        }
+        &__btn {
+            width: 246px;
+            text-align: center;
+        }
+    }
+
+
+    &.active:hover .cart-content {
+        opacity: 1;
+        visibility: visible;
+        transition: opacity 0.3s, visibility 0.3s;
+    }
+    &-product {
+        display: flex;
+        align-items: center;
+        padding: 12px 20px;
+        transition: background-color 0.3s;
+        &:hover {
+            background-color: rgba(77, 77, 77, 0.2);
+        }
+        &__img {
+            max-width: 100px;
+            max-height: 100px;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+        &__title {
+            max-width: 280px;
+            margin-bottom: 15px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: var(--color-dark);
+        }
+        &__price {
+            font-family: 'Roboto' sans-serif;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 23px;
+            color: var(--color-dark);
+        }
+        &__delete {
+            margin-left: auto;
+            width: 20px;
+            height: 20px;
+            border: none;
+            background-color: transparent;
+            padding: 0;
+            background-image: url('../img/trash.svg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            cursor: pointer;
+        }
+    }
+}
