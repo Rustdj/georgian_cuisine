@@ -6,12 +6,16 @@
     justify-content: center;
 	grid-template-columns: repeat(4, 1fr);
 	grid-gap: $gutter;
+	padding-top: 165px;
 }
+
 .filters {
 	position: relative;
+	
 }
 .filters-price__input {
 	width: 100%;
+	display: none;
 }
 .fixed {
 	position: fixed;
@@ -31,19 +35,75 @@
 	z-index: 100;
 	background-color: #fff;
 	box-shadow: 0px 4px 4px rgba(135, 135, 135, 0.25);
+	&__cart {
+		color: #fff;
+	}
 }
+.img {
+	max-width: 100px;
+	max-height: 100px;
+	border-radius: 100px;
+}
+
 .nav {
-	display: flex;
 	align-items: center;
-	justify-content: flex-end;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 10px;
+	background-color: #373a5b;
+	&__item:not(:last-child) {
+		margin-right: 60px;
+		a {
+			font-size: 20px;
+			line-height: 19px;
+			text-align: right;
+			color: #fff;
+			text-decoration: none;
+			background-image: linear-gradient(currentColor, currentColor);
+			background-position: 50% 100%;
+			background-repeat: no-repeat;
+			background-size: 0% 1px;
+			transition: background-size .3s;
+			&:hover {
+				background-size: 100% 1px; 
+			}
+		}
+	}
+
+	&__item {
+        
+		a {
+			font-size: 20px;
+			line-height: 19px;
+			text-align: right;
+			color: #fff;
+			text-decoration: none;
+			background-image: linear-gradient(currentColor, currentColor);
+			background-position: 50% 100%;
+			background-repeat: no-repeat;
+			background-size: 0% 1px;
+			transition: background-size .3s;
+			&:hover {
+				background-size: 100% 1px; 
+			}
+		}
+	}
+	
 }
 .nav__list {
 	display: flex;
 	align-items: center;
+	margin: 0 auto;
+	color: #fff;
+	
 }
 .nav__item {
+
 	&:not(:last-child) {
 		margin-right: 60px;
+		
 	}
 }
 .nav__link {
@@ -114,12 +174,13 @@
 	position: absolute;
 	right: 0;
 	top: 100%;
-	width: 490px;
+	//width: 490px;
 	background-color: #fff;
 	box-shadow: opx 4px 4px rgba(135, 135, 135, 0.25);
 	opacity: 0;
 	visibility: hidden;
 	transition: opacity 0.3s, visibility 0.3s;
+	color: $main-color-dark;
 }
 .cart-content__list {
 	max-height: 330px;
@@ -192,6 +253,12 @@
 .cart-content__btn {
 	width: 246px;
 	text-align: center;
+	border: 1px solid red;
+	&:hover {
+		background-color: red;
+		color: #fff;
+		transition: 0.5s;
+	}
 }
 .simplebar-track {
 	&.simplebar-vertical {

@@ -50,6 +50,7 @@ html {
 }
 .filters {
     position: relative;
+    display: none;
     &-price {
         &__input {
             width: 100%;

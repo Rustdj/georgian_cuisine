@@ -7,38 +7,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Roboto:wght@500;700&display=swap');
 
-// @font-face {
-//     font-family: "Noto Sans";
-//     src: url(../fonts/NotoSansRegular.woff2) format('woff2');
-//     font-display: swap;
-//     font-weight: 400;
-//     font-style: normal;
-// }
-
-// @font-face {
-//     font-family: "Noto Sans";
-//     src: url(../fonts/NotoSansSemiBold.woff2) format('woff2');
-//     font-display: swap;
-//     font-weight: 600;
-//     font-style: normal;
-// }
-
-// @font-face {
-//     font-family: "Roboto";
-//     src: url(../fonts/RobotoMedium.woff2) format('woff2');
-//     font-display: swap;
-//     font-weight: 500;
-//     font-style: normal;
-// }
-
-// @font-face {
-//     font-family: "Roboto";
-//     src: url(../fonts/RobotoBold.woff2) format('woff2');
-//     font-display: swap;
-//     font-weight: 700;
-//     font-style: normal;
-// }
-
 
 h1,
 h2,
@@ -56,7 +24,7 @@ ul {
 }
 
 .container {
-    width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
     padding: 0 $gutter;
     margin-top: $gutter;
@@ -74,9 +42,10 @@ ul {
 @import 'blocks/basket';
 @import 'blocks/cardorder';
 @import 'blocks/media';
-//@import 'blocks/content';
+ //@import 'blocks/content';
 @import 'blocks/simplebar';
 @import 'blocks/product';
-//@import 'blocks/cart';
+ //@import 'blocks/cart';
 @import 'blocks/order';
 @import 'blocks/css';
+@import 'blocks/modal';

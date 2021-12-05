@@ -1,55 +1,3 @@
-// window.addEventListener('DOMContentLoaded', () => {
-//     const menu = document.querySelector('.menu'),
-//           menuItem = document.querySelectorAll('.menu'),
-//           hamburger = document.querySelector('.hamburger');
-
-//     hamburger.addEventListener('click', () => {
-//         hamburger.classList.toggle('hamburger__active');
-//         menu.classList.toggle('menu__active');
-//     });
-
-//     menuItem.forEach(item => {
-//         item.addEventListener('click', () => {
-//             hamburger.classList.toggle('hamburger__active');
-//             menu.classList.toggle('menu__active');
-//         })
-//     })  
-// })
-
-
-// // Tabs
-
-// const tabsBtn = document.querySelectorAll('.header__btn');
-// const tabsItem = document.querySelectorAll('.products-grid__item');
-
-
-// tabsBtn.forEach(onTabClick); 
-
-// function onTabClick (item) {
-//     item.addEventListener( 'click', () => {
-//         let currentBtn = item;
-//         let tabId = currentBtn.getAttribute('data-tab');
-//         let currentTab = document.querySelector(tabId);
-
-//         tabsBtn.forEach( (item) => {
-//             item.classList.remove('active');
-//         });
-
-//         tabsItem.forEach( (item) => {
-//             item.classList.remove('active');
-//         });
-
-//         currentBtn.classList.add('active');
-//         currentTab.classList.add('active');
-        
-//     });
-// }
-
-// document.querySelector('.header__btn').click();
-
-
-// Product cart
-
 const product = document.querySelectorAll('.product');
 
 if (product) {
@@ -60,7 +8,7 @@ if (product) {
         if (imageSwitchItems.length > 1) {
             imageSwitchItems.forEach((el, index) => {
                 el.setAttribute('data-index', index);
-                imagePagination.innerHTML += `<div class="image-pagination__item ${index == 0 ? 'image-pagination__item-active' : ''}"  data-index='${index}'></div>`;
+                imagePagination.innerHTML += `<li class="image-pagination__item ${index == 0 ? 'image-pagination__item-active' : ''}"  data-index='${index}'></li>`;
                 el.addEventListener('mouseenter', (e) => {
                     currentProduct.querySelectorAll('.image-pagination__item').forEach(el => {el.classList.remove('image-pagination__item-active')});
                     currentProduct.querySelector(`.image-pagination__item[data-index='${e.currentTarget.dataset.index}']`).classList.add('image-pagination__item-active');
@@ -81,7 +29,7 @@ if (product) {
 
 const fixedBlock = document.querySelector('.filters-price'),
       filters = document.querySelector('.filters'),
-      gutter = parseInt(getComputedStyle(document.documentElement).getPropertyValue('$gutter')),
+      gutter = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--gutter')),
       container = document.querySelector('.container'),
       offsetLeft = container.offsetLeft + gutter;
       filtersOffsetTop = filters.offsetTop,
@@ -170,3 +118,162 @@ const generateCartProduct = (img, title, price, id) => {
         </li>
     `;
 };
+
+// delete
+
+const deleteProduct = (productParent) => {
+
+    let id = productParent.querySelector('.cart-product').dataset.id;
+    document.querySelector(`.product[data-id='${id}']`).querySelector('.product__btn').disabled = false
+
+    let currentPrice = parseInt(priceWithoutSpaces(productParent.querySelector('.cart-product__price').textContent))
+    minusFullPrice(currentPrice);
+    printFullPrice();
+    productParent.remove();
+    printQuantity();
+};
+
+productsBtn.forEach(el => {
+    el.closest('.product').setAttribute('data-id', randomId());
+    el.addEventListener('click', (e) => {
+        let self = e.currentTarget;
+        let parent = self.closest('.product');
+        let id = parent.dataset.id;
+        let img = parent.querySelector('.image-switch__img img').getAttribute('src');
+        let title = parent.querySelector('.product__title').textContent;
+        //let priceString = parent.querySelector('.product-price__current').textContent;
+        let priceNumber = parseInt(priceWithoutSpaces(parent.querySelector('.product-price__current').textContent));
+
+        plusFullPrice(priceNumber);// summ
+        printFullPrice();// print full price
+        cartProductList.querySelector('.simplebar-content').insertAdjacentHTML('afterbegin', generateCartProduct(img, title, priceNumber, id));// add to cart
+        printQuantity();// count and print quantity
+        self.dasabled = true; // disabled btn
+    });
+});
+
+
+cartProductList.addEventListener('click', (e) => {
+    if (e.target.classList.contains('cart-product__delete')) {
+        deleteProduct(e.target.closest('.cart-content__item'))
+    }
+});
+
+// Modal
+
+const orderModalOpenProd = document.querySelector('.order-modal__btn');
+const orderModalList = document.querySelector('.order-modal__list');
+
+
+let flag = 0;
+
+orderModalOpenProd.addEventListener('click', (e) => {
+    if (flag == 0) {
+        orderModalOpenProd.classList.add('open');
+        orderModalList.style.display = 'block';
+        flag = 1;
+    } else {
+        orderModalOpenProd.classList.remove('open');
+        orderModalList.style.display = 'none';
+        flag = 0;
+    }
+});
+
+
+// Заполнение товарами и отправление на почту
+
+
+const generateModalProduct = (img, title, price, id) => {
+	return `
+		<li class="order-modal__item">
+			<article class="order-modal__product order-product" data-id="${id}">
+				<img src="${img}" alt="" class="order-product__img">
+				<div class="order-product__text">
+					<h3 class="order-product__title">${title}</h3>
+					<span class="order-product__price">${normalPrice(price)}</span>
+				</div>
+				<button class="order-product__delete">Удалить</button>
+			</article>
+		</li>
+	`;
+};
+
+const modal = new GraphModal({
+	isOpen: (modal) => {
+		console.log('opened');
+		let array = cartProductList.querySelector('.simplebar-content').children;
+		let fullprice = fullPrice.textContent;
+		let length = array.length;
+
+		document.querySelector('.order-modal__quantity span').textContent = `${length} шт`;
+		document.querySelector('.order-modal__summ span').textContent = `${fullprice}`;
+		for (item of array) {
+			console.log(item)
+			let img = item.querySelector('.cart-product__img').getAttribute('src');
+			let title = item.querySelector('.cart-product__title').textContent;
+			let priceString = priceWithoutSpaces(item.querySelector('.cart-product__price').textContent);
+			let id = item.querySelector('.cart-product').dataset.id;
+
+			orderModalList.insertAdjacentHTML('afterbegin', generateModalProduct(img, title, priceString, id));
+
+            let obj = {};
+            obj.title = title;
+            obj.price = priceString;
+            productArray.push(obj);
+
+        }
+
+       console.log(productArray)
+    },
+    isClose: () => {
+        console.log('closed');
+    }
+});
+
+document.querySelector('.order').addEventListener('submit', (e) => {
+    e.preventDefault();
+    let self = e.currentTarget;
+
+    let formData = new FormData(self);
+    let name = self.querySelector('[name="Имя"]').value;
+    let tel = self.querySelector('[name="Телефон"]').value;
+    let mail = self.querySelector('[name="Email"]').value;
+    formData.append('Товары', JSON.stringify(productArray));
+    formData.append('Имя', name);
+    formData.append('Телефон', tel);
+    formData.append('Email', mail);
+
+    let xhr = new XMLHttpRequest();
+
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4) {
+            if (xhr.status === 200) {
+                console.log('Отправлено');
+            }
+        }
+    }
+
+    xhr.open('POST', 'mail.php', true);
+    xhr.send(formData);
+
+    self.reset();
+});
+
+
+let selector = document.querySelectorAll('input[type="tel"]');
+
+let im = new Inputmask('+7 (999) 999-99-99');
+
+im.mask(selector);
+
+
+
+
+
+
+//-----------------------
+
+
+
+
+
