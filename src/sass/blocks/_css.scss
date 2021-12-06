@@ -90,15 +90,30 @@
 			}
 		}
 	}
+	&__list {
+		display: flex;
+		align-items: center;
+		margin: 0 auto;
+		color: #fff;
+		@media (max-width: 474px) {
+			display: flex;
+			align-items: center;
+			//margin: 0 auto;
+			margin-left: 64px;
+			color: #fff;
+		}
+	}
+	&__link {
+		font-family: 'Roboto', sans-serif;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 19px;
+		text-align: right;
+		color: var(--color-dark);
+	}
 	
 }
-.nav__list {
-	display: flex;
-	align-items: center;
-	margin: 0 auto;
-	color: #fff;
-	
-}
+
 .nav__item {
 
 	&:not(:last-child) {
@@ -106,14 +121,7 @@
 		
 	}
 }
-.nav__link {
-	font-family: 'Roboto', sans-serif;
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 19px;
-	text-align: right;
-	color: var(--color-dark);
-}
+
 .cart {
 	position: relative;
 	padding: 40px 20px;
