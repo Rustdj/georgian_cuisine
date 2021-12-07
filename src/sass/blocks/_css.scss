@@ -22,9 +22,9 @@
 	top: var(--gutter);
 	left: 0;
 }
-.height {
-	height: 300px;
-}
+// .height {
+// 	height: 300px;
+// }
 .absolute {
 	position: absolute;
 	bottom: 0;
@@ -147,6 +147,7 @@
     border: 1px solid red;
     border-radius: 5px;
     cursor: pointer;
+	left: 49%;
     &:hover {
         background-color: red;
         color: #fff;

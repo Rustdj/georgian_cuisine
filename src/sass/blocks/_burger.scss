@@ -1,22 +1,4 @@
-// .header {
-//     position: fixed;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     z-index: 10;
-//     &__container {
-//         max-width: 1200px;
-//         margin: 0 auto;
-//         display: flex;
 
-//     }
-//     &__logo {
-
-//     }
-//     &__menu {
-        
-//     }
-// }
 .menu {
     &__icon {
         display: none;
@@ -27,13 +9,23 @@
     &__list {
         li {
             position: relative;
-            margin: 0px 0px 0px 20px;
+            margin: 0px 0px 0px 30px;
         }
 
     }
     &__link {
         color: #fff;
         font-size: 18px;
+        background-image: linear-gradient(currentColor, currentColor);
+        background-position: 50% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 3px;
+        &:hover {
+            color: rgb(230, 126, 126);
+            transition: all 0.6s;
+            text-decoration: none;
+            background-size: 100% 1px;
+        }
     }
     &__sub-list {
         position: absolute;
@@ -44,6 +36,7 @@
         min-width: 200px;
         li {
             margin: 0px 0px 10px 0px;
+            
         }
         &:last-child {
             margin: 0;
@@ -51,6 +44,7 @@
     }
     &__sub-link {
         color: #fff;
+        margin-left: 150px;
         &:hover {
             text-decoration: underline;
         }
@@ -78,10 +72,10 @@ body._touch .menu .menu__arrow {
     display: block;
     width: 0;
     height: 0;
-    margin: 0px 0px 0px 5px;
+    margin: 0px 0px 0px 8px;
     transition: transform 0.3s ease 0s;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
     border-top: 10px solid #fff;
 }
 
@@ -103,8 +97,10 @@ body._touch .menu__list li._active .menu__arrow {
         &__list {
             display: flex;
             align-items: center;
+            list-style-type: none;
             li {
                 padding: 10px 0;
+                
             }
         }
         &__sub-list {
@@ -123,9 +119,10 @@ body._touch .menu__list li._active .menu__arrow {
             z-index: 5;
             display: block;
             position: relative;
-            width: 30px;
-            height: 18px;
+            width: 45px;
+            height: 30px;
             cursor: pointer;
+            left: 40px;
             span,
             &::before,
             &::after{
@@ -147,10 +144,11 @@ body._touch .menu__list li._active .menu__arrow {
                 transform: scale(1) translate(0px, -50%);
             }
             &._active {
-                left: 0;
+                left: 40px;
                 transition: left 0.5s ease 0s;
             }
         }
+        
     }
     .menu {
         &__body {
@@ -169,7 +167,7 @@ body._touch .menu__list li._active .menu__arrow {
                 width: 100%;
                 top: 0;
                 left: 0;
-                height: 70px;
+                height: 115px;
                 background-color: #373a5b;
                 z-index: 2;
             }
@@ -185,6 +183,7 @@ body._touch .menu__list li._active .menu__arrow {
             li {
                 flex-wrap: wrap;
                 margin: 0px 0px 30px 0px;
+                
             }
             li {
                 &:last-child {

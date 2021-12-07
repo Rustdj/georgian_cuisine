@@ -53,8 +53,12 @@
         opacity: 0;
         visibility: hidden;
         transition: opacity 0.3s, visibility 0.3s;
+        
         &__list {
             max-height: 330px;
+            overflow: auto;
+            width: 500px;
+            
         }
         &__bottom {
             padding: 22px 20px;
