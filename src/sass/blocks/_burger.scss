@@ -4,7 +4,7 @@
         display: none;
     }
     &__body {
-
+        
     }
     &__list {
         li {
@@ -93,7 +93,7 @@ body._touch .menu__list li._active .menu__arrow {
 @media (min-width: 448px) {
     .menu {
         &__list {
-            display: inline;
+            display: flex;
             align-items: center;
             list-style-type: none;
             li {
