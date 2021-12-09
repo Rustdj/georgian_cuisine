@@ -149,7 +149,7 @@
             border: 1px solid red;
             border-radius: 5px;
             cursor: pointer;
-            left: 41%;
+            left: 35%;
             &:hover {
                 background-color: red;
                 color: #fff;
@@ -216,7 +216,8 @@
             grid-template-columns: repeat(3, 1fr);
             grid-gap: $gutter;
             padding-top: 165px;
-            margin-left: 134px;
+            //margin-left: 134px;
+            justify-content: center;
             
         }
         .height {
@@ -243,7 +244,7 @@
             grid-column: 3 span;
             width: 100%;
             grid-template-columns: repeat(3, 1fr);
-            grid-gap: $gutter;
+            grid-gap: 55px;
             padding-top: 165px;
             margin-left: 140px;
             
@@ -274,11 +275,15 @@
             display: grid;
             grid-column: 3 span;
             width: 100%;
-            grid-template-columns: repeat(3, 1fr);
-            grid-gap: $gutter;
+            grid-template-columns: repeat(3, 350px);
+            grid-gap: 7px;
             padding-top: 165px;
-            margin-left: 160px;
+            justify-content: center;
             
+        }
+        .product {
+            width: 342px;
+
         }
         .footer__media {
             margin-left: 158px;
@@ -312,7 +317,7 @@
             
         }
         .footer__media {
-            margin-left: 177px;
+            justify-content: center;
         }
         .height {
             height: 5px;
@@ -337,14 +342,20 @@
             display: grid;
             grid-column: 3 span;
             width: 100%;
-            grid-template-columns: repeat(3, 1fr);
-            grid-gap: $gutter;
+            grid-template-columns: repeat(3, 350px);
+            grid-gap: 7px;
             padding-top: 165px;
-            margin-left: 204px;
+            margin-left: 175px;
             
+        }
+        .header__cart {
+            left: 31%;
         }
         .footer__media {
             margin-left: 162px;
+        }
+        .footer__block {
+            margin-left: 0;
         }
         .height {
             height: 5px;
@@ -436,9 +447,15 @@
     .container {
         max-width: none;
 
-        
+        .menu__link {
+            font-size: 25px;
+        }
+        .nav {
+            height: 132px;
+        }
         .header__cart {
             margin-left: 0;
+            left: 17%;
         }
 
         .footer__media iframe {
@@ -447,6 +464,16 @@
 
         .footer__media {
             margin-left: 81px;
+        }
+        .products-grid {
+            display: grid;
+            grid-column: 3 span;
+            width: 100%;
+            grid-template-columns: repeat(2, 350px);
+            grid-gap: 80px;
+            padding-top: 165px;
+            margin-left: 218px;
+            
         }
 
         .social__block {
@@ -472,8 +499,15 @@
         max-width: none;
 
         
+        .menu__link {
+            font-size: 25px;
+        }
         .header__cart {
             margin-left: 0;
+            left: 17%;
+        }
+        .nav {
+            height: 132px;
         }
 
         .footer__media iframe {
@@ -502,10 +536,10 @@
             display: grid;
             grid-column: 3 span;
             width: 100%;
-            grid-template-columns: repeat(3, 1fr);
-            grid-gap: $gutter;
+            grid-template-columns: repeat(2, 350px);
+            grid-gap: 80px;
             padding-top: 165px;
-            margin-left: 247px;
+            margin-left: 218px;
             
         }
         
@@ -516,8 +550,9 @@
     
     .container {
         max-width: none;
-        .header__cart {
-            margin-left: 0;
+        
+        .menu__link {
+            font-size: 25px;
         }
 
         .footer__media iframe {
@@ -526,6 +561,9 @@
 
         .footer__media {
             margin-left: 81px;
+        }
+        .nav {
+            height: 132px;
         }
 
         .social__block {
@@ -546,10 +584,10 @@
             display: grid;
             grid-column: 3 span;
             width: 100%;
-            grid-template-columns: repeat(3, 1fr);
-            grid-gap: $gutter;
+            grid-template-columns: repeat(2, 350px);
+            grid-gap: 80px;
             padding-top: 165px;
-            margin-left: 275px;
+            margin-left: 280px;
             
         }
 
@@ -570,7 +608,7 @@
             border: 1px solid red;
             border-radius: 5px;
             cursor: pointer;
-            left: 28%;
+            left: 6%;
             &:hover {
                 background-color: red;
                 color: #fff;
@@ -598,6 +636,30 @@
                 transition: 0.4s;
             } 
         }
+        .products-grid {
+            display: grid;
+            grid-column: 3 span;
+            width: 100%;
+            grid-template-columns: repeat(2, 350px);
+            grid-gap: 80px;
+            padding-top: 165px;
+            margin-left: 280px;
+            
+        }
+        .menu__link {
+            font-size: 25px;
+        }
+        .nav {
+            height: 141px;
+        }
+        .menu__list {
+            display: inline;
+            align-items: center;
+            list-style-type: none;   
+        }
+        .menu__list li {
+            padding: 10px 0;
+        }
     }
 }
 
@@ -621,11 +683,14 @@
             display: grid;
             grid-column: 3 span;
             width: 100%;
-            grid-template-columns: repeat(3, 1fr);
-            grid-gap: $gutter;
+            grid-template-columns: repeat(2, 350px);
+            grid-gap: 107px;
             padding-top: 165px;
             margin-left: 298px;
             
+        }
+        .nav {
+            height: 141px;
         }
     }
 }
@@ -639,7 +704,7 @@
             border: 1px solid red;
             border-radius: 5px;
             cursor: pointer;
-            left: 70%;
+            
             &:hover {
                 background-color: red;
                 color: #fff;
@@ -651,11 +716,17 @@
             display: grid;
             grid-column: 3 span;
             width: 100%;
-            grid-template-columns: repeat(3, 1fr);
-            grid-gap: $gutter;
+            grid-template-columns: repeat(2, 350px);
+            grid-gap: 107px;
             padding-top: 165px;
             margin-left: 330px;
             
+        }
+        .nav {
+            height: 141px;
+        }
+        .header__cart {
+            left: 71%;
         }
     }
 }
