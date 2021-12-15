@@ -126,20 +126,26 @@
             grid-template-columns: repeat(3, 1fr);
             grid-gap: $gutter;
             padding-top: 165px;
-            margin-left: 101px;
+            margin: 0 auto;
             
         }
         .footer__media iframe {
-            margin-left: -74px;
+            margin-left: 0px;
+        }
+        .footer__block {
+            grid-template-columns: 487px 433px;
+            margin-top: 60px;
         }
 
         .social__block {
             display: grid;
-            grid-template-columns: repeat(2,567px);
+            grid-template-columns: repeat(2, 1fr);
             grid-template-rows: 300px;
-            /* justify-content: center; */
-            margin-top: 4px;
-            margin-left: 108px;
+            margin-top: 0px;
+        }
+        .social__wrapper {
+            width: 510px;
+            margin-bottom: -83px;
         }
         .height {
             height: 5px;
@@ -171,7 +177,7 @@
             grid-template-columns: repeat(3, 1fr);
             grid-gap: $gutter;
             padding-top: 165px;
-            margin-left: 91px;  
+            margin-left: 0px;  
 
         }
 
@@ -249,9 +255,7 @@
             margin-left: 140px;
             
         }
-        .footer__media {
-            margin-left: 143px;
-        }
+        
         .height {
             height: 5px;
         }
@@ -303,7 +307,7 @@
     
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .container {
         max-width: none;
 
@@ -311,13 +315,23 @@
             display: grid;
             grid-column: 3 span;
             width: 100%;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(2, 1fr);
             grid-gap: $gutter;
             padding-top: 165px;
+            margin-left: 0px;
             
         }
         .footer__media {
             justify-content: center;
+            text-align: center;
+            
+        }
+        .footer__media iframe {
+            width: 600px;
+            height: 400px;
+        }
+        .footer__block {
+            grid-template-columns: repeat(1, 2fr);
         }
         .height {
             height: 5px;
@@ -325,10 +339,17 @@
 
         .social__block {
             display: grid;
-            grid-template-columns: repeat(1,1054px);
+            grid-template-columns: repeat(2,383px);
             grid-template-rows: 300px;
-            margin-top: 4px;
-            margin-left: 288px;
+            margin: 0 auto;
+            padding-top: 50px;
+        }
+        .social__wrapper {
+            width: 100%;
+            height: 100%;
+        }
+        .header__cart {
+            left: 18%;
         }
     }
     
@@ -777,6 +798,7 @@
         }
     }
 }
+
 
 @media (max-width:411px) {
     .container {
