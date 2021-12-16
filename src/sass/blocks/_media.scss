@@ -231,3 +231,43 @@
     }
     
 }
+@media (max-width: 320px) {
+    .container {
+
+        .social__block {
+            grid-template-columns: repeat(1,313px);
+        }
+        .product {
+            margin-left: 9%;
+        }
+        .products-grid {
+            margin-left: -25px;
+        }
+        .header__cart {
+            left: 35%;
+        }
+        .menu__icon {
+            left: 15px;
+        }
+        .menu__sub-link {
+            font-size: 14px;
+            color: #000;
+        }
+        .menu__link {
+            font-size: 20px;
+        }
+        .fullprice {
+            font-size: 18px;
+        }
+        .cart-content {
+            width: 303px;
+            top: 111%;
+        }
+        .cart-product__delete {
+            width: 40px;
+        }
+        .cart-content__btn {
+            width: 150px;
+        }
+    }
+}
