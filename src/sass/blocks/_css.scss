@@ -184,7 +184,9 @@
 	right: 0;
 	top: 100%;
 	//width: 490px;
-	background-color: #fff;
+	background-color: #d1d4dd;
+	border-radius: 8px;
+	width: 350px;
 	box-shadow: opx 4px 4px rgba(135, 135, 135, 0.25);
 	opacity: 0;
 	visibility: hidden;
@@ -226,7 +228,7 @@
 }
 .cart-product__delete {
 	margin-left: auto;
-	width: 20px;
+	width: 40px;
 	height: 20px;
 	border: none;
 	background-color: transparent;
@@ -239,14 +241,15 @@
 }
 .cart-content__bottom {
 	padding: 22px 20px;
-	display: flex;
+	//display: flex;
 	align-items: center;
 	justify-content: space-between;
 }
 .cart-content__fullprice {
-	display: flex;
+	//display: flex;
 	flex-direction: column;
 	font-weight: 400;
+	text-align: -webkit-match-parent;
 	font-size: 14px;
 	line-height: 20px;
 	color: var(--color-dark);
@@ -256,12 +259,14 @@
 	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
 	font-size: 20px;
+	margin-left: 10px;
 	line-height: 23px;
 	color: var(--color-dark);
 }
 .cart-content__btn {
 	width: 246px;
 	text-align: center;
+	margin-top: 10px;
 	border: 1px solid red;
 	&:hover {
 		background-color: red;
@@ -494,6 +499,10 @@ body {
 	line-height: 20px;
 	text-align: right;
 	color: var(--color-light);
+}
+.social__soc {
+    margin-left: 30px;
+    margin-top: 50px;
 }
 .order-modal__info {
 	margin-bottom: 20px;
