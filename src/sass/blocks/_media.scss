@@ -582,6 +582,11 @@
             margin-left: 0px;
             
         }
+        .menu__list {
+            margin-left: -30px;
+            display: grid;
+            padding: 0px 0px 0px 50px;
+        }
         .menu__icon {
             z-index: 5;
             display: block;
@@ -631,6 +636,12 @@
 
         .product {
             margin-left: 0%;
+        }
+        .nav__list {
+            margin-left: 0px;
+        }
+        .menu__sub-list {
+            top: 0%;
         }
         .products-grid {
             display: grid;
@@ -693,6 +704,12 @@
         .product {
             margin-left: 14%;
         }
+        .nav__list {
+            margin-left: 0px;
+        }
+        .menu__sub-list {
+            top: 0%;
+        }
         .products-grid {
             display: grid;
             grid-column: 3 span;
@@ -754,6 +771,12 @@
         .product {
             margin-left: 14%;
         }
+        .nav__list {
+            margin-left: 0px;
+        }
+        .menu__sub-list {
+            top: 0%;
+        }
         .products-grid {
             display: grid;
             grid-column: 3 span;
@@ -805,6 +828,12 @@
 
         .product {
             margin-left: 14%;
+        }
+        .nav__list {
+            margin-left: 0px;
+        }
+        .menu__sub-list {
+            top: 0%;
         }
         .products-grid {
             display: grid;
@@ -858,6 +887,12 @@
         .product {
             margin-left: 14%;
         }
+        .nav__list {
+            margin-left: 0px;
+        }
+        .menu__sub-list {
+            top: 0%;
+        }
         .products-grid {
             display: grid;
             grid-column: 3 span;
@@ -909,6 +944,12 @@
 
         .product {
             margin-left: 14%;
+        }
+        .nav__list {
+            margin-left: 0px;
+        }
+        .menu__sub-list {
+            top: 0%;
         }
         .products-grid {
             display: grid;
@@ -962,6 +1003,12 @@
         .product {
             margin-left: 14%;
         }
+        .nav__list {
+            margin-left: 0px;
+        }
+        .menu__sub-list {
+            top: 0%;
+        }
         .products-grid {
             display: grid;
             grid-column: 3 span;
@@ -1013,6 +1060,12 @@
 
         .product {
             margin-left: 9%;
+        }
+        .nav__list {
+            margin-left: 0px;
+        }
+        .menu__sub-list {
+            top: 0%;
         }
         .products-grid {
             display: grid;
@@ -1067,6 +1120,9 @@
         .social__block {
             grid-template-columns: repeat(1,313px);
         }
+        .nav__list {
+            margin-left: 0px;
+        }
         .product {
             margin-left: 9%;
         }
@@ -1082,6 +1138,9 @@
         .menu__sub-link {
             font-size: 14px;
             color: #000;
+        }
+        .menu__sub-list {
+            top: 0%;
         }
         .menu__link {
             font-size: 20px;
