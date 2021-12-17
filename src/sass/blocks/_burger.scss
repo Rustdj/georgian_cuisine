@@ -90,7 +90,7 @@ body._touch .menu__list li._active .menu__arrow {
 }
 // -------------------------------
 
-@media (min-width: 448px) {
+@media (min-width: 620px) {
     .menu {
         &__list {
             display: flex;
@@ -111,7 +111,7 @@ body._touch .menu__list li._active .menu__arrow {
         
     }
 }
-@media (max-width: 448px) {
+@media (max-width: 643px) {
     .menu {
         &__icon {
             z-index: 5;
