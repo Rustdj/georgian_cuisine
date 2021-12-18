@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -51,21 +51,21 @@
                 <nav class="menu__body menu">
                     <div class="nav__list">
                         <ul class="menu__list">
-                            <li><a data-goto=".page__section_1" href="#" class="menu__link">Раздел №1</a></li>
-                            <li><a data-goto=".page__section_2" href="#" class="menu__link">Раздел №2</a></li>
-                            <li><a data-goto=".page__section_3" href="#" class="menu__link">Раздел №3</a></li>
+                            <li><a data-goto=".page__section_1" href="#" class="menu__link">Market</a></li>
+                            <li><a data-goto=".page__section_2" href="#" class="menu__link">Dilivery</a></li>
+                            <li><a data-goto=".page__section_3" href="#" class="menu__link">Contacts</a></li>
                             <li>
-                                <a href="#" class="menu__link">Меню</a>
+                                <a href="#" class="menu__link">Selection</a>
                                 <span class="menu__arrow"></span>
                                 <ul class="menu__sub-list">
                                     <li>
-                                        <a href="#" class="menu__sub-link">Раздел страницы №1</a>
+                                        <a href="#" class="menu__sub-link">some section of the page</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="menu__sub-link">Раздел страницы №2</a>
+                                        <a href="#" class="menu__sub-link">some section of the page</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="menu__sub-link">Раздел страницы №3</a>
+                                        <a href="#" class="menu__sub-link">some section of the page</a>
                                     </li>
                                 </ul>
                             </li>    
@@ -76,12 +76,12 @@
                 </nav>
                 <div class="header__cart cart" tabindex="0">
                     <div class="cart__text">
-                        Корзина
+                        <img src="icons/order/trolley.png" alt="cart">
                         <span class="cart__quantity">0</span>
                     </div>
                     <div class="cart-content">
                         <ul class="cart-content__list" data-simplebar>
-                            <!-- <li class="cart-content__item">
+                             <!-- <li class="cart-content__item">
                                 <article class="cart-content__product cart-product">
                                     <img src="img/macbook.jpg" alt="Макбук" class="cart-product__img">
                                     <div class="cart-product__text">
@@ -90,16 +90,16 @@
                                     </div>
                                     <button class="cart-product__delete" aria-label="Удалить товар"></button>
                                 </article>
-                            </li> -->
+                            </li>  -->
                         </ul>
                         <div class="cart-content__bottom">
                             <div class="cart-content__fullprice">
-                                <span>Итого: </span>
+                                <span>Subtotal: </span>
                                 <span class="fullprice">568 789 ₽</span>
                             </div>
                             <button class="cart-content__btn btn" data-graph-path="modal" data-graph-animation="fadeInUp" data-graph-speed='400'>Перейти в корзину</button>
                         </div>
-                    </div>
+                    </div> 
                 </div>
             </nav>
         </div>
@@ -120,23 +120,23 @@
             </div>
             <div class="products-grid">
                 <div class="products-grid__item">
-                    <article class="product">
+                     <article class="product">
                         <a href="" class="product__image">
                             <div class="product__switch image-switch">
                                <div class="image-switch__item">
-                                   <div class="image-switch__img"><img src="https://myasnuyray.com.ua/wp-content/uploads/2017/12/jt03k6uf1.jpg" alt="Макбук"></div>
+                                   <div class="image-switch__img"><img src="https://myasnuyray.com.ua/wp-content/uploads/2017/12/jt03k6uf1.jpg" alt="Meat"></div>
                                </div>
                                <div class="image-switch__item">
-                                   <div class="image-switch__img"><img src="https://www.sobaka.ru/images/image/00/69/78/79/_normal.jpg" alt="Макбук"></div>
+                                   <div class="image-switch__img"><img src="https://www.sobaka.ru/images/image/00/69/78/79/_normal.jpg" alt="Meat"></div>
                                </div>
                                <div class="image-switch__item">
-                                   <div class="image-switch__img"><img src="https://shop.alem.ws/wa-data/public/photos/15/00/15/15.970.jpg" alt="Макбук"></div>
+                                   <div class="image-switch__img"><img src="https://shop.alem.ws/wa-data/public/photos/15/00/15/15.970.jpg" alt="Meat"></div>
                                </div>
                             </div>
                             <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
                         </a>
                         <h3 class="product__title">
-                            <a href="#">Сочный стэйк из мраморной говядины приготовленный на открытом огне!</a>
+                            <a href="#">Juicy marbled beef steak cooked over an open fire!</a>
                         </h3>
                         <div class="product__props">
                             <span class="product__rating">
@@ -145,31 +145,30 @@
                                     </svg>
                                 4,5
                             </span>
-                            <span class="product__testimonials">83 отзыва</span>
+                            <span class="product__testimonials">83 reviews</span>
                         </div>
                         <div class="product__info">
-                            <span class="product__term">Страна: Аргентина</span>
-                            <span class="product__available">Масса: 350гр</span>
+                            <span class="product__term">Country: Argentina</span>
+                            <span class="product__available">Weight: 350g</span>
                         </div>
                         <div class="product__price product-price">
                             <span class="product-price__current">1 900 ₽</span>
-                            <!-- <span class="product-price__old">194 990 ₽</span> -->
                         </div>
-                        <button class="product__btn btn">Добавить в корзину</button>
-                     </article> 
+                        <button class="product__btn btn">Add to Cart</button>
+                     </article>
                 </div>
                 <div class="products-grid__item">
                     <article class="product">
                         <a href="" class="product__image">
                             <div class="product__switch image-switch">
                                <div class="image-switch__item">
-                                   <div class="image-switch__img"><img src="https://cdn.lifehacker.ru/wp-content/uploads/2015/07/shutterstock_250474828_1436794844.jpg" alt="Макбук"></div>
+                                   <div class="image-switch__img"><img src="https://cdn.lifehacker.ru/wp-content/uploads/2015/07/shutterstock_250474828_1436794844.jpg" alt="meat"></div>
                                </div>
                                <div class="image-switch__item">
-                                   <div class="image-switch__img"><img src="https://storage.delikateska.ru/e/7/ce2f6fd8-a55a-45b1-85a4-4f0a6c6caeba.jpg" alt="Макбук"></div>
+                                   <div class="image-switch__img"><img src="https://storage.delikateska.ru/e/7/ce2f6fd8-a55a-45b1-85a4-4f0a6c6caeba.jpg" alt="meat"></div>
                                </div>
                                <div class="image-switch__item">
-                                   <div class="image-switch__img"><img src="https://www.sobaka.ru/images/image/00/69/78/79/_normal.jpg" alt="Макбук"></div>
+                                   <div class="image-switch__img"><img src="https://www.sobaka.ru/images/image/00/69/78/79/_normal.jpg" alt="meat"></div>
                                </div>
                             </div>
                             <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
@@ -235,7 +234,7 @@
                         </div>
                         <button class="product__btn btn">Добавить в корзину</button>
                      </article> 
-                </div>
+                </div> 
                 <div class="products-grid__item">
                     <article class="product">
                         <a href="" class="product__image">

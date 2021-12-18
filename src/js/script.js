@@ -155,7 +155,7 @@ productsBtn.forEach(el => {
 
 cartProductList.addEventListener('click', (e) => {
     if (e.target.classList.contains('cart-product__delete')) {
-        deleteProduct(e.target.closest('.cart-content__item'))
+        deleteProduct(e.target.closest('.cart-content__item')) //closest
     }
 });
 
@@ -175,7 +175,7 @@ orderModalOpenProd.addEventListener('click', (e) => {
     } else {
         orderModalOpenProd.classList.remove('open');
         orderModalList.style.display = 'none';
-        flag = 0;
+        flag = 0; 
     }
 });
 
