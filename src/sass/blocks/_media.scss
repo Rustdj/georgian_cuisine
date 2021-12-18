@@ -1054,6 +1054,24 @@
     }
     
 }
+@media (max-width: 415px) {
+    .container {
+        max-width: 376px;
+
+        .cart__text img {
+            width: 80px;
+            filter: sepia(#fff);
+            color: #fdf5e6;
+            margin-left: -35px;
+        }
+        .social__block {
+            grid-template-columns: repeat(1,413px); 
+        }
+
+        
+    }
+    
+}
 
 @media (max-width: 375px) {
     .container {

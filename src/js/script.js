@@ -93,7 +93,7 @@ const minusFullPrice = (currentPrice) => {
 };
 
 const printFullPrice = () => {
-    fullPrice.textContent = `${normalPrice(price)} ₽`
+    fullPrice.textContent = `${normalPrice(price)} €`
 };
 
 const printQuantity = () => {
@@ -111,9 +111,9 @@ const generateCartProduct = (img, title, price, id) => {
             <img src="${img}" alt="Макбук" class="cart-product__img">
                 <div class="cart-product__text">
                 <h3 class="cart-product__title">${title}</h3>
-            <span class="cart-product__price">${normalPrice(price)} ₽</span>
+            <span class="cart-product__price">${normalPrice(price)} €</span>
             </div>
-            <button class="cart-product__delete" aria-label="Удалить товар"></button>
+            <button class="cart-product__delete" aria-label="Delete item"></button>
             </article>
         </li>
     `;
@@ -192,7 +192,7 @@ const generateModalProduct = (img, title, price, id) => {
 					<h3 class="order-product__title">${title}</h3>
 					<span class="order-product__price">${normalPrice(price)}</span>
 				</div>
-				<button class="order-product__delete">Удалить</button>
+				<button class="order-product__delete">Delete</button>
 			</article>
 		</li>
 	`;
@@ -205,7 +205,7 @@ const modal = new GraphModal({
 		let fullprice = fullPrice.textContent;
 		let length = array.length;
 
-		document.querySelector('.order-modal__quantity span').textContent = `${length} шт`;
+		document.querySelector('.order-modal__quantity span').textContent = `${length} pcs`;
 		document.querySelector('.order-modal__summ span').textContent = `${fullprice}`;
 		for (item of array) {
 			console.log(item)
@@ -262,7 +262,7 @@ document.querySelector('.order').addEventListener('submit', (e) => {
 
 let selector = document.querySelectorAll('input[type="tel"]');
 
-let im = new Inputmask('+7 (999) 999-99-99');
+let im = new Inputmask('+ 358 (99) 999-99-99');
 
 im.mask(selector);
 
