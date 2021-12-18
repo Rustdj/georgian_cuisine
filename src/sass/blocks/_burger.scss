@@ -46,7 +46,7 @@
         color: #fff;
         //margin-left: 150px;
         &:hover {
-            text-decoration: underline;
+            color: orangered;
         }
     }
     &__arrow {
@@ -60,6 +60,7 @@ body._pc .menu__list > li:hover .menu__sub-list {
     visibility: visible;
     transform: translate(0px, 0px);
     pointer-events: all;
+    list-style-type: none;
 }
 body._touch .menu__list li {
     display: flex;
