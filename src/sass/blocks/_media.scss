@@ -999,13 +999,18 @@
 
 @media (max-width: 425px) {
     .container {
-        max-width: none;
+        max-width: 416px;
 
         .product {
             margin-left: 14%;
         }
         .nav__list {
             margin-left: 0px;
+        }
+        .cart-content {
+            width: 303px;
+            top: 84%;
+            right: 63px;
         }
         .menu__sub-list {
             top: 0%;
@@ -1067,6 +1072,11 @@
         .social__block {
             grid-template-columns: repeat(1,413px); 
         }
+        .cart-content {
+            width: 303px;
+            top: 84%;
+            right: -4px;
+        }
 
         
     }
@@ -1085,6 +1095,11 @@
         }
         .menu__sub-list {
             top: 0%;
+        }
+        .cart-content {
+            width: 303px;
+            top: 84%;
+            right: -4px;
         }
         .products-grid {
             display: grid;
@@ -1169,7 +1184,8 @@
         }
         .cart-content {
             width: 303px;
-            top: 111%;
+            top: 84%;
+            right: -30px;
         }
         .cart-product__delete {
             width: 40px;
